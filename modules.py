@@ -3,11 +3,11 @@ import random
 
 
 def GenKey():
-	return random.randint(5, 20)
+	return random.randint(5, 20) # Modular part #1
 
 
 def GenKeyValue(key):
-	return int((pow(key, 8) + pow(key, 3))/(key * 3))
+	return int((pow(key, 8) + pow(key, 3))/(key * 3)) # Modular part #2
 
 
 def Encrypt(data):
